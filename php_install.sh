@@ -19,3 +19,4 @@ sudo apt-get install libapache2-mod-auth-mysql php5-mysql phpmyadmin
 ## ;extension=mysql.so
 ## To look like this:
 ## extension=mysql.so
+sudo apt-get install php5-fpm
