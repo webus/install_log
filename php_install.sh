@@ -18,6 +18,17 @@ sudo apt-get install libapache2-mod-auth-mysql php5-mysql phpmyadmin
 ## Change this line:
 ## ;extension=mysql.so
 ## To look like this:
-## extension=mysql.so
+## extension=mysql.s
+
+
+sudo apt-get --purge remove apache2
+sudo apt-get --purge remove apache2-mpm-prefork
+sudo apt-get --purge remove apache2-mpm-itk
+sudo apt-get --purge remove apache2.2-bin
+sudo apt-get --purge remove apache2-utils
+
+sudo dpkg -l | grep apache
+
+
 sudo apt-get install nginx
-sudo apt-get install php5-cli php5-common php5-mysql php5-suhosin php5-gd php5-fpm php5-cgi php5-fpm php-pear php5-mcrypt
+sudo apt-get install php5-cli php5-common php5-mysql php5-gd php5-fpm php5-cgi php5-fpm php-pear php5-mcrypt
