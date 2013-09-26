@@ -1,4 +1,9 @@
 #!/bin/sh
+
+sudo apt-get install nginx
+sudo apt-get install php5-cli php5-common php5-mysql php5-suhosin php5-gd php5-fpm php5-cgi php5-fpm php-pear php5-mcrypt
+:
+
 sudo apt-get install apache2
 curl http://localhost/
 
