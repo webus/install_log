@@ -5,7 +5,12 @@ git clone https://github.com/joyent/node.git
 cd node
 ./configure --prefix=/opt/node --debug
 make
-sudo make install
+#sudo make install
+sudo checkinstall -D make install
+
+#create deb package
+#checkinstall --fstrans=no --install=no --pkgname=node.js --pkgversion «0.1.97» --default
+
 
 #install npm
 curl https://npmjs.org/install.sh | sh
