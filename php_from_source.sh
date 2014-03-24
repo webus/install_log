@@ -1,25 +1,4 @@
 #!/bin/sh
-
-sudo apt-get --purge remove apache2
-sudo apt-get --purge remove apache2-mpm-prefork
-sudo apt-get --purge remove apache2-mpm-itk
-sudo apt-get --purge remove apache2.2-bin
-sudo apt-get --purge remove apache2-utils
-
-sudo dpkg -l | grep apache
-
-sudo apt-get install nginx
-sudo apt-get install php5-cli php5-common php5-mysql php5-gd php5-fpm php5-cgi php-pear php5-mcrypt
-
-sudo apt-get install mysql-server
-mysql -u root --password #test connect
-
-sudo apt-get install phpmyadmin
-curl http://localhost/ 
-
-
-
-# from source
 sudo apt-get install libxml2-dev bison re2c mysql-server mysql-client zlib1g-dev libbz2-dev libpng-dev libmysqlclient-dev libgmp3-dev libcurl4-openssl-dev sqlite3 libsqlite-dev libdb4.8-dev libxpm-dev libgd2-xpm-dev
 git clone git://github.com/php/php-src.git
 cd ./php-src
@@ -74,4 +53,5 @@ cd ./php-src
 --without-pdo-dblib \
 --with-pdo-mysql=shared,/usr \
 --with-pdo-sqlite=shared
+make && make install
 
