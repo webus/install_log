@@ -13,5 +13,5 @@ rvm use 1.9.2
 /bin/bash --login
 rvm use 1.9.2
 rvm use 1.9.2 --default
-gem install rails
+gem install rails --no-ri --no-rdoc
 sudo apt-get install nodejs

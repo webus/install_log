@@ -1,5 +1,6 @@
 #!/bin/sh
 sudo apt-get install libxml2-dev bison re2c mysql-server mysql-client zlib1g-dev libbz2-dev libpng-dev libmysqlclient-dev libgmp3-dev libcurl4-openssl-dev sqlite3 libsqlite-dev libdb4.8-dev libxpm-dev libgd2-xpm-dev
+sudo apt-get install libxml2 libxml2-dev
 git clone git://github.com/php/php-src.git
 cd ./php-src
 ./buildconf
